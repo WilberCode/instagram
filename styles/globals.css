@@ -1,0 +1,39 @@
+@tailwind base; 
+@tailwind components; 
+@tailwind utilities; 
+
+@layer components{
+    .container{
+        @apply mx-auto;
+    }
+    .layout{
+        @apply border border-layout bg-white ; 
+        border-radius:3px;
+    }
+    .story{
+        border-left-color:#f99646;
+        border-top-color:#8891bd;
+        border-right-color:#da3483;
+        border-bottom-color:#f06a44;
+    }
+    body{
+        @apply pt-[44px] sm:pt-[61px] bg-body ;
+    }
+  
+}
+*{
+    @apply text-heading;
+}
+.splide > .splide__track{
+    overflow-x: clip;
+    overflow-y: inherit;
+}
+.splide__arrows > .splide__arrow{
+    @apply w-6 h-6 bg-white opacity-100 shadow-lg text-[10px] ;
+    transform: translateY(-80%);
+}
+.splide__arrows > .splide__arrow svg{
+    @apply text-gray-500  fill-current  ;
+   
+   
+}
